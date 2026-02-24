@@ -13,6 +13,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.recipecomposeapp.core.ui.navigation.BottomNavigation
 import com.example.recipecomposeapp.ui.categories.CategoriesScreen
 import com.example.recipecomposeapp.ui.favorites.FavoritesScreen
+import com.example.recipecomposeapp.ui.recipes.RecipesScreen
 import com.example.recipecomposeapp.ui.theme.RecipeComposeAppTheme
 
 @Composable
@@ -30,8 +31,9 @@ fun RecipesApp() {
             }
         ) { paddingValues ->
             when (currentScreen) {
-                ScreenId.CATEGORIES -> CategoriesScreen(modifier = Modifier.padding(paddingValues))
+                ScreenId.CATEGORIES -> CategoriesScreen(onRecipesClick = { currentScreen = ScreenId.RECIPES }, modifier = Modifier.padding(paddingValues))
                 ScreenId.FAVORITES -> FavoritesScreen(modifier = Modifier.padding(paddingValues))
+                ScreenId.RECIPES -> RecipesScreen(modifier = Modifier.padding(paddingValues))
             }
         }
     }
