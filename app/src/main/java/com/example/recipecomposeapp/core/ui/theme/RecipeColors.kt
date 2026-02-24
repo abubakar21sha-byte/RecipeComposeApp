@@ -9,4 +9,5 @@ object RecipeColors {
     val RedLight = Color(0xFFE35B5B)
     val TitleColor = Color(0xFF5F3678)
     val DescriptionColor = Color(0xFF666666)
+    val White = Color(0xFFffffff)
 }
