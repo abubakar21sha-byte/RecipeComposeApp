@@ -9,4 +9,8 @@ object Dimens {
     val PaddingMediumLarge = 12.dp
     val PaddingMain = 16.dp
     val PaddingLarge = 24.dp
+
+    val RoundedCornerSmall = 4.dp
+    val RoundedCornerMedium = 8.dp
+    val RoundedCornerLarge = 12.dp
 }

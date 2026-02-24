@@ -19,16 +19,3 @@ class MainActivity : ComponentActivity() {
         }
     }
 }
-
-@Composable
-fun HomeScreen(modifier: Modifier = Modifier) {
-    Column(modifier = modifier) {
-        Text(text = "Recipes App")
-    }
-}
-
-@Preview(showBackground = true)
-@Composable
-fun HomeScreenPreview() {
-    HomeScreen()
-}
