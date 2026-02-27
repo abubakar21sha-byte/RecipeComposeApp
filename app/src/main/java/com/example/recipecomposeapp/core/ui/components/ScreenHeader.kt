@@ -13,9 +13,9 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
 import com.example.recipecomposeapp.core.ui.theme.Dimens
+import com.example.recipecomposeapp.core.ui.theme.Dimens.ScreenHeaderFontSize
+import com.example.recipecomposeapp.core.ui.theme.Dimens.ScreenHeaderHeight
 import com.example.recipecomposeapp.core.ui.theme.RecipeColors
 
 @Composable
@@ -24,7 +24,7 @@ fun ScreenHeader(
     imageRes: Int
 ) {
     Box(
-        modifier = Modifier.fillMaxWidth().height(224.dp),
+        modifier = Modifier.fillMaxWidth().height(ScreenHeaderHeight),
     ) {
         Image(
             painter = painterResource(id = imageRes),
@@ -42,7 +42,7 @@ fun ScreenHeader(
             Text(
                 text = title,
                 Modifier.padding(Dimens.PaddingMedium),
-                fontSize = 24.sp,
+                fontSize = ScreenHeaderFontSize,
                 color = RecipeColors.TitleColor
             )
         }
