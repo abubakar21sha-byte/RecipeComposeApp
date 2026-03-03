@@ -1,6 +1,7 @@
 package com.example.recipecomposeapp.core.ui.theme
 
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 
 object Dimens {
     val PaddingSmallest = 2.dp
@@ -13,4 +14,7 @@ object Dimens {
     val RoundedCornerSmall = 4.dp
     val RoundedCornerMedium = 8.dp
     val RoundedCornerLarge = 12.dp
+
+    val ScreenHeaderHeight = 224.dp
+    val ScreenHeaderFontSize = 24.sp
 }
